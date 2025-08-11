@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Info Webpage | Project_week2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Personal Info Webpage | Project_week2</h1>
+        <nav>
+            <a href="#form">Registration</a>
+            <a href="#table">Sample</a>
+            <a href="#image">About me</a>
+        </nav>
+    </header>
+
+    <!-- Form Section -->
+    <section id="form">
+        <h2>Fill in your Information</h2>
+        <form action="">
+
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input type="text" id="name" class="name" required>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" class="email" required>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" class="dob" required min="1900-01-01" max="2025-11-01">
+
+            <!-- Sex -->
+            <label for="sex">Sex:</label>
+            <div class="radio-group">
+                <label for="male">
+                    <input type="radio" id="male" name="sex" value="male"> Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="sex" value="female"> Female
+                </label>
+            </div>
+
+            <!-- Country -->
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="Cambodia">Cambodia</option>
+                <!-- Keep only necessary countries for brevity -->
+                <!-- ... (other countries remain here) -->
+            </select>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+    <!-- Sample Table -->
+    <section id="table">
+        <h2>Sample Information Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Country</th>
+                    <th>Sex</th>
+                    <th>Date of Birth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Khov Santana</td>
+                    <td>khovsantana123@gmail.com</td>
+                    <td>Cambodia</td>
+                    <td>Male</td>
+                    <td>2007-09-02</td>
+                </tr>
+                <tr>
+                    <td>Sok Dara</td>
+                    <td>sokdara456@gmail.com</td>
+                    <td>Cambodia</td>
+                    <td>Male</td>
+                    <td>2005-04-18</td>
+                </tr>
+                <tr>
+                    <td>Chanthy Sreyneang</td>
+                    <td>chanthy.sreyneang@gmail.com</td>
+                    <td>Cambodia</td>
+                    <td>Female</td>
+                    <td>2006-11-25</td>
+                </tr>
+                <tr>
+                    <td>Vannak Rithy</td>
+                    <td>vannak.rithy99@gmail.com</td>
+                    <td>Cambodia</td>
+                    <td>Male</td>
+                    <td>2004-07-12</td>
+                </tr>
+                <tr>
+                    <td>Kimlong Sovann</td>
+                    <td>kimlong.sovann88@gmail.com</td>
+                    <td>Cambodia</td>
+                    <td>Female</td>
+                    <td>2007-01-30</td>
+                </tr>
+                <tr>
+                    <td>Chenda Borey</td>
+                    <td>chenda.borey@gmail.com</td>
+                    <td>Cambodia</td>
+                    <td>Female</td>
+                    <td>2005-09-15</td>
+                </tr>
+                <tr>
+                    <td>Piseth Chan</td>
+                    <td>piseth.chan77@gmail.com</td>
+                    <td>Cambodia</td>
+                    <td>Male</td>
+                    <td>2006-05-08</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- About Me -->
+    <section id="image">
+        <h2>About Me</h2>
+        <figure>
+            <img src="img.jpg" alt="Profile Image">
+        </figure>
+        <p>
+            Hi, I’m Khov Santana, a freshman student at the Khmer Institute of Technology, 
+            majoring in Software Engineering. I’m passionate about building creative, 
+            functional, and user-friendly applications, and I’m eager to explore various 
+            areas of technology, from web development to software design. My goal is to 
+            continuously learn, improve my skills, and contribute to innovative projects 
+            that make a positive impact. Outside of academics, I enjoy exploring new ideas, 
+            solving problems, and connecting with people who share my passion for technology.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:khovsantana123@gmail.com">khovsantana123@gmail.com</a></p>
+        <p>Phone: +855 969 382 51</p>
+        <p>Location: Cambodia</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Personal Info. All rights reserved.
+    </footer>
+
+</body>
+</html>
